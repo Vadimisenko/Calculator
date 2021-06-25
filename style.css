@@ -1,0 +1,31 @@
+body {
+    background: url(fon.jpg) no-repeat;
+    background-size: cover;
+}
+.container {
+    width: 400px;
+    height: 560px;
+    margin: 50px auto 0;
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: grey;
+    position: relative;
+}
+.display {
+    width: 300px;
+    height: 50px;
+    margin: 42px;
+    font-size: 34px;
+    outline: 1px solid black;
+    text-align: right;
+}
+input[type="button"] {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+    background-color: rgb(182, 217, 233);
+    margin: 2px;
+    font-size: 34px;
+    font-weight: bold;
+}
