@@ -3,25 +3,25 @@ const display = document.querySelector('.display');
 let operator = [], operand = [], dispMem;
 
 function calc (operator, operand) {
-    let rezult = [];
+    let rezult;
     for (let i = 0; i < operator.length; i++) {
         switch (operator[i]) {
             case '+' :
-                rezult[i] = (+operand[i]) + (+operand[i+1]);
+                rezult = (+operand[i]) + (+operand[i+1]);
                 break;
             case '-' :
-                rezult[i] = (+operand[i]) - (+operand[i+1]);
+                rezult = (+operand[i]) - (+operand[i+1]);
                 break;  
             case '*' :
-                rezult[i] = (+operand[i]) * (+operand[i+1]);
+                rezult = (+operand[i]) * (+operand[i+1]);
                 break;  
             case '/' :
-                rezult[i] = (+operand[i]) / (+operand[i+1]);
+                rezult = (+operand[i]) / (+operand[i+1]);
                 break;     
         }
-        operand[i+1] = rezult[i];
-        display.value = rezult[(operator.length - 1)];
+        operand[i+1] = rezult;
     }
+    display.value = rezult;
 }
 
 buttons.addEventListener('click', (e) => {
